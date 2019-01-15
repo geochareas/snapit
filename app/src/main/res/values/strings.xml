@@ -1,0 +1,11 @@
+<resources>
+    <!-- Utility -->
+    <string name="app_name">snapit</string>
+    <string name="version">1.0.2</string>
+    <string name="facebook_application_id" translatable="false">762428720765898</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb762428720765898</string>
+
+    <!-- Buttons -->
+    <string name="btn_signin">Sign in</string>
+    <string name="btn_reply">Reply</string>
+</resources>

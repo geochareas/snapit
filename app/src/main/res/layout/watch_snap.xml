@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchSnap">
+
+
+    <VideoView
+        android:id="@+id/snap_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" />
+
+    <include
+        layout="@layout/watch_snap_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/snap_loading"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:indeterminate="true"
+        app:mpb_progressStyle="horizontal"
+        app:mpb_progressTint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="17dp"
+        android:drawableStart="@drawable/visibility"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/view_replies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:text="View replies"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/replyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/transp_outlined"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@drawable/camera"
+        android:drawableTint="@color/colorPrimaryDark"
+        android:paddingLeft="7.5dp"
+        android:text="Reply"
+        android:textColor="@color/colorPrimaryDark"/>
+</FrameLayout>
